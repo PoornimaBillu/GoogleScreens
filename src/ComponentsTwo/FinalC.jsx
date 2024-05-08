@@ -1,38 +1,24 @@
-import React, { useRef } from 'react';
-import logo from "../Assets/logo.jpg";
-import './style.css';
 
-import leftImage from "../Assets/leftimage.webp"
-import centerImage from "../Assets/centerimage.webp"
-import rightImage from "../Assets/rightimage.webp";
+
+import React, { useState } from 'react'
 import { motion } from "framer-motion";
+import logo from "../Assets/logo.jpg";
+import rightImage from '../Assets/rightimage.webp';
+import centerImage from "../Assets/centerimage.webp";
+import leftImage from "../Assets/leftimage.webp";
+import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+function FinalC() {
+    const onClick2=()=>{
+                 window.location.href="#fast"
+         }
 
-
-import { Link } from 'react-scroll';
-import Fast from './Fast';
-
-
-function HomePage() {
-    const ref = useRef(null);
-    // const scrollHandler = (eleRef) =>{
-    //     window.scrollTo({top:eleRef.current.offsetToTop, behavior:'smooth'})
-    // }
-    const handleClick=()=>{
-        ref.current?.scrollIntoView({behaviour:'smooth'})
-        
-    }
-    
   return (
     <>
     <div className='navhead'>
     <img src={logo} alt='Logo' className='logo' />
     <span>chrome</span>
-    {/* <Link to="/">Ai Innovations</Link>
-    <Link to="/">Features</Link>
-    <Link to="/">Safety</Link>
-    <Link to="/">By Google</Link>
-    <Link to="/">Extensions</Link> */}
     <a>AI innovations</a>
     <a>Features</a>
     <a>Safety</a>
@@ -49,12 +35,13 @@ function HomePage() {
         <h3 className='heading1'>The Browser built to be yours </h3>
         <div className='searchbar'>
            <ul>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }}>Update</Link></li>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }}>AI</Link></li>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }}>Yours</Link></li>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }}>Safe</Link></li>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }} onClick={handleClick}>Fast</Link></li>
-            <li><Link to='' style={{ textDecoration: 'none', color: '#6c6e70' }}>By Google</Link></li>
+            <li style={{ textDecoration: 'none', color: '#6c6e70' }}>Update</li>
+            <li style={{ textDecoration: 'none', color: '#6c6e70'}}>AI</li>
+            <li style={{ textDecoration: 'none', color: '#6c6e70' }}>Yours</li>
+            <li style={{ textDecoration: 'none', color: '#6c6e70'}}>Safe</li>
+            <li onClick={ onClick2}style={{ textDecoration: 'none', color: '#6c6e70' }}>Fast</li>
+            <li style={{ textDecoration: 'none', color: '#6c6e70'}}>By Google</li>
+            
             
             </ul>
             
@@ -83,13 +70,12 @@ function HomePage() {
   >
     <img src={rightImage} alt='Google Images' className='overFlow' />
   </motion.div>
-  
-        </div>
-        
-        </div>
-        <Fast ref={ref} />
-        {/* <div ref={fast}>
-   <h1>
+  </div>
+  </div>
+  <br></br><br></br><br></br><br></br>
+  <div id='fast'>
+    <a href='#fast' aria-hidden='true' />
+    <h1>
         The{" "}
         <motion.span
           className='fastcmp'
@@ -106,10 +92,34 @@ function HomePage() {
    <video width="960" height="515" autoPlay muted>
   <source src="https://www.google.com/chrome/static/videos/dev-components/non-chrome.webm" type="video/webm" />
 </video>
-</div> */}
+</div>
 
+  </div>
     </>
   )
 }
 
-export default HomePage
+export default FinalC;
+// import React from 'react';
+// import './styles.css'
+
+// function FinalC() {
+
+//     const onClick=()=>{
+//         window.location.href="#fast"
+//     }
+//   return (
+//     <>
+    
+// <ul>
+//     <li>Abc</li>
+//     <li>def</li>
+//     <li>ghi</li>
+//     <li>jkl</li>
+//     <li>mno</li>
+//     </ul>
+//     </>
+//   )
+// }
+
+// export default FinalC

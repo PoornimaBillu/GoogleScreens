@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import "./style.css";
 import {motion} from 'framer-motion'
 
 
-function Fast() {
+function Fast({ref}) {
+    
   return (
     <>
-   <div>
+    
+   <div ref={ref}>
    <h1>
         The{" "}
         <motion.span
@@ -20,14 +22,18 @@ function Fast() {
         </motion.span>{" "}
         ways to do Things Online
       </h1>
-   </div>
+   <div>
+   <video width="960" height="515" autoPlay muted>
+  <source src="https://www.google.com/chrome/static/videos/dev-components/non-chrome.webm" type="video/webm" />
+</video>
+</div></div>
     {/* <div><h1>The <span className='fastcmp' style={{width: "140px", display: "inline-block"}}> <span className="spinner"></span>Fast</span> ways to do Things Online</h1></div> */}
-  
+    
     </>
   )
 }
 
-export default Fast;
+export default forwardRef(Fast);
 
 
 
