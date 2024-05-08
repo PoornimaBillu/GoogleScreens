@@ -1,0 +1,154 @@
+.navhead{
+    box-sizing: border-box;
+    box-shadow: 0 1px 8px 0 rgb(220, 225, 226);
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+/* style.css */
+
+.navhead {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .navhead .img {
+    width: 50px; 
+    height: auto; 
+    margin-right: 2px; 
+    margin-left: 20px;
+  }
+  
+  .navhead span {
+    margin-right: 50px; 
+    font-size: 28px;
+    color: #6c6e70;
+  }
+  .navhead span:hover{
+    background-color: #cacccf;
+    color: #4b4d4f;
+  }
+  .navhead a {
+    margin-right: 20px; 
+    font-size: 18px;
+    color: #6c6e70;
+    cursor: pointer;
+  }
+ .navhead a:hover{
+    background-color: #cacccf;
+    color: #4b4d4f;
+  }
+  
+  .centerImage{
+    height: 80px;
+    width: 80px;
+    margin-top: 30px;
+  }
+
+  .heading1{
+    font-size: 48px;
+    margin-top: 10px;
+  }
+  .searchbar{
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: 370px;
+  }
+  ul, li{
+    margin-top: 6px;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #6c6e70;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  .clicklink{
+    color: #071eb3;
+    text-decoration: underline;
+    cursor: pointer;
+
+  }
+  .imagesSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+  }
+  .overFlow{
+    height: 300px;
+    width: 300px;
+  }
+  .overFlowcenter{
+    margin-top: 60px;
+    width: 500px;
+
+  }
+
+  .popup {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-title {
+    font-size: 1.5rem;
+    color: #333333;
+  }
+  
+  .popup-text {
+    font-size: 1rem;
+    color: #666666;
+  }
+  
+  .popup-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .popup-button:last-child {
+    margin-right: 0;
+  }
+  .fastcmp{
+    background-color: #87d688;
+    color: #166317;
+    border-radius: 20px;
+    width: 800px;
+    height: 50px;
+  }
+  .spinner {
+    
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ccc;
+    border-radius: 50%;
+    border-top-color:#166317;
+    animation: spin 1s linear forwards;
+    display: inline-block;
+    margin-right: 10px;
+    margin: 10 15px;
+    
+    
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
